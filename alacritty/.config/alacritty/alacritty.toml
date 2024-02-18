@@ -5,7 +5,10 @@ bold = { family = "JetBrainsMono Nerd Font", style = "Bold" }
 
 [window]
 # dimensions = { x = 125, y = 40 }
-decorations = "Transparent"
 opacity = 0.9
 blur = true
 title = "Terminal (Alacritty)"
+
+[bell]
+animation = "Ease"
+duration = 1
