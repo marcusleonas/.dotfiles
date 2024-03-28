@@ -22,3 +22,10 @@ export HERD_PHP_83_INI_SCAN_DIR="/Users/marcus/Library/Application Support/Herd/
 
 # Herd injected PHP binary.
 export PATH="/Users/marcus/Library/Application Support/Herd/bin/":$PATH
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
+
+# Load Starship
+eval "$(starship init zsh)"
