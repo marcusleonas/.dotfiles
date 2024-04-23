@@ -1,5 +1,3 @@
-# CodeWhisperer pre block. Keep at the top of this file.
-[[ -f "${HOME}/Library/Application Support/codewhisperer/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/codewhisperer/shell/zshrc.pre.zsh"
 # pnpm
 export PNPM_HOME="/Users/marcus/Library/pnpm"
 case ":$PATH:" in
@@ -11,6 +9,7 @@ export NVM_DIR="$HOME/.nvm"
 
 export GPG_TTY=$(tty)
 
+for file in ~/.zsh/*.zsh; source $file && echo "Sourced $file"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
@@ -27,6 +26,3 @@ eval "`fnm env`"
 eval "$(fnm env --use-on-cd)"
 
 eval "$(starship init zsh)"
-
-# CodeWhisperer post block. Keep at the bottom of this file.
-[[ -f "${HOME}/Library/Application Support/codewhisperer/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/codewhisperer/shell/zshrc.post.zsh"
