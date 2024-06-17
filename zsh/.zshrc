@@ -9,8 +9,6 @@ export NVM_DIR="$HOME/.nvm"
 
 export GPG_TTY=$(tty)
 
-for file in ~/.zsh/*.zsh; source $file && echo "Sourced $file"
-
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
@@ -23,6 +21,12 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="/Users/marcus/Library/Application Support/fnm:$PATH"
 eval "`fnm env`"
 
+export PATH="/Users/marcus/go/bin:$PATH"
+
 eval "$(fnm env --use-on-cd)"
 
-eval "$(starship init zsh)"
+eval "$(oh-my-posh init zsh --config $HOME/.config/oh-my-posh/base.toml)"
+
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+for file in ~/.zsh/*.zsh; source $file

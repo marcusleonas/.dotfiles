@@ -11,7 +11,7 @@
     "copilot": false
   },
   "vim_mode": false,
-  "theme": "Catppuccin Mocha",
+  "theme": "poimandres",
   "base_keymap": "VSCode",
   "ui_font_size": 16,
   "terminal": {
