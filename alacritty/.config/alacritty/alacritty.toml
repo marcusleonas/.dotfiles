@@ -1,14 +1,25 @@
+
 [font]
-size = 14.0
-normal = { family = "JetBrainsMono Nerd Font", style = "Regular" } 
-bold = { family = "JetBrainsMono Nerd Font", style = "Bold" } 
+size = 15.0
+normal = { family = "JetBrainsMono NFP", style = "Regular" }
 
 [window]
-# dimensions = { x = 125, y = 40 }
-opacity = 0.9
+dimensions = { columns = 130, lines = 30 }
+opacity = 0.8
 blur = true
-title = "Terminal (Alacritty)"
+title = "Terminal"
 
 [bell]
 animation = "Ease"
 duration = 1
+
+[keyboard]
+bindings = [
+  { key = "Right", mods = "Alt", chars = "\u001BF" },
+  { key = "Left",  mods = "Alt", chars = "\u001BB" },
+]
+
+[general]
+import = [
+    "~/.config/alacritty/themes/themes/horizon-dark.toml"
+]
