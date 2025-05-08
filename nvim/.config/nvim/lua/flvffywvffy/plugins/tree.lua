@@ -15,8 +15,8 @@ return {
             -- fill any relevant options here
         },
         keys = {
-            { "<leader>tt", "<cmd>Neotree toggle<cr>", desc = "Neotree Toggle" },
-            { "<leader>tf", "<cmd>Neotree focus<cr>", desc = "Neotree focus" },
+            { "<leader>et", "<cmd>Neotree toggle<cr>", desc = "Neotree Toggle" },
+            { "<leader>ef", "<cmd>Neotree focus<cr>", desc = "Neotree focus" },
         },
     }
 }
